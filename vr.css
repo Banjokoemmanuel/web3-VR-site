@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: poppins; */
+    color: white;
+}
+
+body{
+    background: linear-gradient(
+        to right,
+        rgb(67,66,106),
+        rgb(195,148,192)
+    );
+
+    font-family: be vietnam pro;
+    font-weight: lighter;
+}
+
+.nav-and-section{
+    background-image: url(Group\ 60.png);
+    height: 100vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+.logo{
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: audiowide;
+}
+
+.logo p{
+    /* color: rgb(254,137,244); */
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+a:hover{
+    color: rgb(254,137,244);
+    border-bottom: 1px solid rgb(254,137,244);
+}
+
+.hold-2{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+}
+
+header{
+    padding: 2rem 0;
+    /* border: 1px white solid; */
+}
+
+.hold-head-section{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.txt-1{
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: audiowide;
+    letter-spacing: 0.3rem;
+}
+
+b{
+    color: rgb(254,137,244);
+}
+
+.txt-2{
+    font-size: 1.5rem;
+    width: 90%;
+    
+}
+
+.cta button{
+    background-color: rgb(70,68,107);
+    border: 1px solid rgb(189,119,192);
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    transition-duration: 1s;
+}
+
+.cta button:hover{
+    background-color: rgb(254,137,244);
+    color: black;
+    padding: 0.5rem 3rem;
+}
+
+.hold-3{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+/* media query */
+
+@media only screen and (max-width: 724px){
+    .container{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .nav-links{
+        gap: 1rem;
+    }
+
+    .hold-2{
+        flex-direction: column;
+    }
+
+
+    .logo{
+        width: 100%;
+    }
+
+    .logo p{
+        text-align: center;
+    }
+
+    .hold-3{
+        width: 100%;
+        text-align: center;
+    }
+
+    .txt-1{
+        /* text-align: center; */
+        width: 100%;
+    }
+
+    .txt-2{
+        /* text-align: center; */
+        width: 100%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 417px){
+    .container{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .nav-links{
+        display: none;
+    }
+    
+    .logo{
+        width: 100%;
+    }
+
+    .logo p{
+        text-align: center;
+    }
+
+    .hold-3{
+        width: 100%;
+    }
+
+    .txt-1{
+        /* text-align: center; */
+        width: 100%;
+    }
+
+    .txt-1 p{
+        text-align: center;
+        font-size: 3.4rem;
+    }
+
+    .txt-2{
+        /* text-align: center; */
+        /* display: none; */
+    }
+
+    .nav-and-section{
+        background: none;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 360px){
+    .container{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .txt-1 p{
+        font-size: 3rem;
+    }
+
+    
+}
